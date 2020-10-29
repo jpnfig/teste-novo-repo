@@ -13,6 +13,7 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Bom dia!");
 		System.out.println("Boa tarde!");
+		System.out.println("Boa noite!");
 //		double xA, xB, xC, yA, yB, yC;
 		Triangle x, y;
 		x = new Triangle();
