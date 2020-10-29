@@ -11,6 +11,7 @@ public class Program {
 		
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
+		System.out.println("Bom dia!");
 //		double xA, xB, xC, yA, yB, yC;
 		Triangle x, y;
 		x = new Triangle();
