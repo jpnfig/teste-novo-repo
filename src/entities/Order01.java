@@ -2,11 +2,11 @@ package entities;
 
 import java.util.Date;
 
-public class Order {
+public class Order01 {
 	private Date date;
 	private Product product;
 	
-	public Order(Date date, Product product) {
+	public Order01(Date date, Product product) {
 		super();
 		this.date = date;
 		this.product = product;
