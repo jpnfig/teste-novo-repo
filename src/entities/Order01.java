@@ -4,9 +4,9 @@ import java.util.Date;
 
 public class Order01 {
 	private Date date;
-	private Product product;
+	private Product01 product;
 	
-	public Order01(Date date, Product product) {
+	public Order01(Date date, Product01 product) {
 		super();
 		this.date = date;
 		this.product = product;
@@ -18,10 +18,10 @@ public class Order01 {
 	public void setDate(Date date) {
 		this.date = date;
 	}
-	public Product getProduct() {
+	public Product01 getProduct() {
 		return product;
 	}
-	public void setProduct(Product product) {
+	public void setProduct(Product01 product) {
 		this.product = product;
 	}
 	

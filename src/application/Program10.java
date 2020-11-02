@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Products;
+import entities.Product02;
 
 public class Program10 {
 
@@ -11,13 +11,13 @@ public class Program10 {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
-		Products[] vect = new Products[n];
+		Product02[] vect = new Product02[n];
 		
 		for (int i=0; i<vect.length; i++) {
 			sc.nextLine();
 			String name = sc.nextLine();
 			double price = sc.nextDouble();
-			vect[i] = new Products(name, price);
+			vect[i] = new Product02(name, price);
 		}
 		double sum = 0.0;
 		for(int i=0; i<vect.length; i++) {

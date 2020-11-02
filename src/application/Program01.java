@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Product;
+import entities.Product01;
 
 public class Program01 {
 
@@ -25,7 +25,7 @@ public class Program01 {
 //		product.quantity = sc.nextInt();
 //		int quantity = sc.nextInt();
 //		Product product = new Product(name, price, quantity);
-		Product product = new Product(name, price);
+		Product01 product = new Product01(name, price);
 		product.setName("Computer");
 		System.out.println("Updated name: " + product.getName());
 		product.setPrice(1200);
