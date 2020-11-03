@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Account;
+import entities.Account01;
 
 public class Program08 {
 
@@ -17,15 +17,15 @@ public class Program08 {
 		String holder = sc.nextLine();
 		System.out.print("Is there na initial deposit (y/n)? ");
 		char response = sc.next().charAt(0);
-		Account account;
+		Account01 account;
 		
 		if (response == 'y') {
 			System.out.print("Enter initial deposit value: ");
 			double initialDeposit = sc.nextDouble();
-			account = new Account(number, holder, initialDeposit);
+			account = new Account01(number, holder, initialDeposit);
 			
 		}else {
-			account = new Account(number, holder);
+			account = new Account01(number, holder);
 		}
 		
 		System.out.println();

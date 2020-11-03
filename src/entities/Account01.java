@@ -1,15 +1,15 @@
 package entities;
 
-public class Account {
+public class Account01 {
 	private int accountNumber;
 	private String accountHolder;
 	private double balance;
-	public Account(int accountNumber, String accountHolder, double initialDeposit) {
+	public Account01(int accountNumber, String accountHolder, double initialDeposit) {
 		this.accountNumber = accountNumber;
 		this.accountHolder = accountHolder;
 		deposit(initialDeposit);
 	}
-	public Account(int accountNumber, String accountHolder) {
+	public Account01(int accountNumber, String accountHolder) {
 		this.accountNumber = accountNumber;
 		this.accountHolder = accountHolder;
 	}
