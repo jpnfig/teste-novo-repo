@@ -1,0 +1,16 @@
+package application;
+
+import entities.Account02;
+import entities.SavingsAccount;
+
+public class Program26 {
+
+	public static void main(String[] args) {
+		Account02 x = new Account02(1020, "Alex", 1000.0);
+		Account02 y = new SavingsAccount(1023, "Maria", 1000.0, 0.01);
+		x.withdraw(50.0);
+		y.withdraw(50.0);
+		System.out.println(x.getBalance());
+		System.out.println(y.getBalance());
+	}
+}
