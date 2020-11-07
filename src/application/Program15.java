@@ -5,14 +5,14 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
-import entities.Employee2;
+import entities.Employee02;
 
 public class Program15 {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
-		List<Employee2> list = new ArrayList<>();
+		List<Employee02> list = new ArrayList<>();
 		System.out.print("How many employees will be registered? ");
 		int N = sc.nextInt();
 		
@@ -30,14 +30,14 @@ public class Program15 {
 			String name = sc.nextLine();			
 			System.out.print("Salary: ");
 			Double salary = sc.nextDouble();
-			Employee2 emp = new Employee2(id, name, salary);
+			Employee02 emp = new Employee02(id, name, salary);
 			list.add(emp);
 		}
 		System.out.println();
 		System.out.print("Enter the employee id that will have salary increase : ");
 		int idsalary = sc.nextInt();
 //      Busca através de uma funcao Lambda:		
-		Employee2 emp = list.stream().filter(x -> x.getId() == idsalary).findFirst().orElse(null);
+		Employee02 emp = list.stream().filter(x -> x.getId() == idsalary).findFirst().orElse(null);
 //		Integer pos = position(list, idsalary);
 		if (emp == null) {
 			System.out.println("This id does not exist!");
@@ -50,12 +50,12 @@ public class Program15 {
 		System.out.println();
 		System.out.println("List of employees: ");
 		
-		for(Employee2 e : list) {
+		for(Employee02 e : list) {
 			System.out.println(e);
 		}		
 		sc.close();
 	}
-	public static Integer position(List<Employee2> list, int id) {
+	public static Integer position(List<Employee02> list, int id) {
 		for(int i=0; i<list.size(); i++) {
 			if(list.get(i).getId() == id) {
 				return i;
@@ -63,8 +63,8 @@ public class Program15 {
 		}
 		return null;
 	}
-	public static boolean hasId(List<Employee2> list, int id) {
-		Employee2 emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+	public static boolean hasId(List<Employee02> list, int id) {
+		Employee02 emp = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
 		return emp != null;
 	}
 }

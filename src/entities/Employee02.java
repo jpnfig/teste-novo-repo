@@ -1,14 +1,14 @@
 package entities;
 
-public class Employee2 {
+public class Employee02 {
 	private Integer id;
 	private String name;
 	private Double salary;
 	
-	public Employee2() {	
+	public Employee02() {	
 	}
 	
-	public Employee2(Integer id, String name, Double salary) {
+	public Employee02(Integer id, String name, Double salary) {
 		this.id = id;
 		this.name = name;
 		this.salary = salary;
