@@ -1,7 +1,8 @@
 package entities;
 
 public class Account02 {
-	
+//Quando a class for Abstrata (abstract):	
+//public abstract class Account02 {
 	private Integer number;
 	private String holder;
 	protected Double balance;
